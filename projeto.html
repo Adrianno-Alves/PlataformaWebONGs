@@ -6,417 +6,488 @@
 
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Adrianno Pereira Alves">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Adrianno Pereira Alves" />
     <title>Nossos Projetos</title>
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
-    <header class="header">
+  <body>
+    <header>
+      <div class="aviso-ficticio">
+        ⚠️ Este site é fictício e foi criado apenas para fins
+        educacionais/demonstrativos. As informações aqui contidas não são reais.
+      </div>
 
-        <div class="aviso-ficticio">
-            ⚠️ Este site é fictício e foi criado apenas para fins educacionais/demonstrativos. As informações aqui
-            contidas não são reais.
+      <nav class="nav-bar">
+        <a href="index.html" class="logo">🐾</a>
+
+        <div class="nav-list">
+          <ul>
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Institucional</a>
+            </li>
+            <li class="nav-item">
+              <a href="doacao.html" class="nav-link">Doações</a>
+            </li>
+            <li class="nav-item">
+              <a href="projeto.html" class="nav-link" class="active"
+                >Projetos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="ajuda.html" class="nav-link">Como Ajudar</a>
+            </li>
+            <li class="nav-item">
+              <a href="login.html" class="nav-link">Entrar</a>
+            </li>
+          </ul>
         </div>
 
-        <nav class="nav-bar">
-            <a href="index.html" class="logo">🐾ONG Wild Hearts</a>
+        <div class="mobile-menu-icon">
+          <button onclick="menuShow()">
+            <img
+              class="icon"
+              src="img/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+            />
+          </button>
+        </div>
 
-            <div class="nav-list">
-                <ul>
-                    <li class="nav-item"><a href="index.html" class="nav-link">Institucional</a></li>
-                    <li class="nav-item"><a href="doacao.html" class="nav-link">Doações</a></li>
-                    <li class="nav-item"><a href="projeto.html" class="nav-link" class="active">Projetos</a></li>
-                    <li class="nav-item"><a href="ajuda.html" class="nav-link">Como Ajudar</a></li>
-                    <li class="nav-item"><a href="login.html" class="nav-link">Entrar</a></li>
-                </ul>
-            </div>
-
-        </nav>
+        <div class="mobile-menu">
+          <ul>
+            <li class="nav-item">
+              <a href="index.html" class="nav-link" class="active"
+                >Institucional</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="doacao.html" class="nav-link">Doações</a>
+            </li>
+            <li class="nav-item">
+              <a href="projeto.html" class="nav-link">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a href="ajuda.html" class="nav-link">Como Ajudar</a>
+            </li>
+            <li class="nav-item">
+              <a href="login.html" class="nav-link">Entrar</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
-    <section id="project" class="project-banner">
-        <div class="banner-projetos">
-            <div class="banner-conteudo">
-                <h1>🐾 Nossos Projetos</h1>
-            </div>
+    <section id="project" class="home-banner">
+      <div class="banner-institucional">
+        <div class="banner-conteudo">
+          <h1>🐾 Nossos Projetos</h1>
         </div>
+      </div>
     </section>
 
-    <section class="project-selection">
-        <div class="container">
-            <a href="#lista" class="project-link">Nossa lista de Projetos</a>
-            <a href="#galeria" class="project-link">Nossa Galeria</a>
-            <a href="#indicadores" class="project-link">Indicadores de Impacto </a>
-            <a href="#categoria" class="project-link">Categoria de Projetos</a>
-
-        </div>
+    <section class="home-selection">
+      <div class="container">
+        <a href="#lista" class="project-link">Nossa lista de Projetos</a>
+        <a href="#galeria" class="project-link">Nossa Galeria</a>
+        <a href="#indicadores" class="project-link">Indicadores de Impacto </a>
+        <a href="#categoria" class="project-link">Categoria de Projetos</a>
+      </div>
     </section>
 
     <section id="lista" class="projetos-lista">
-        <div class="subsecao">
-            <h2>Projetos</h2>
-            <p class="intro-projetos">Conheça os projetos que salvam vidas todos os dias.</p>
+      <div class="subsecao">
+        <h2>Projetos</h2>
+        <p class="intro-projetos">
+          Conheça os projetos que salvam vidas todos os dias.
+        </p>
 
-            <!-- Projeto 1 -->
-            <article class="projeto">
-                <div class="projeto-topo">
-                    <span class="badge-status ativo">Em Andamento</span>
-                    <h3>🚨 Operação Resgate 24h</h3>
-                </div>
+        <!-- Projeto 1 -->
+        <article class="projeto">
+          <div class="projeto-topo">
+            <span class="badge-status ativo">Em Andamento</span>
+            <h3>🚨 Operação Resgate 24h</h3>
+          </div>
 
-                <div class="projeto-info">
-                    <div class="info-grid">
-                        <p><strong>📅 Início:</strong> Janeiro/2023</p>
-                        <p><strong>📍 Local:</strong> Brumado e região</p>
-                        <p><strong>👥 Responsável:</strong> Carlos Oliveira</p>
-                        <p><strong>💰 Investimento:</strong> R$ 120.000/ano</p>
-                    </div>
-                </div>
+          <div class="projeto-info">
+            <div class="info-grid">
+              <p><strong>📅 Início:</strong> Janeiro/2023</p>
+              <p><strong>📍 Local:</strong> Brumado e região</p>
+              <p><strong>👥 Responsável:</strong> Carlos Oliveira</p>
+              <p><strong>💰 Investimento:</strong> R$ 120.000/ano</p>
+            </div>
+          </div>
 
-                <div class="projeto-conteudo">
-                    <h4>Sobre o Projeto</h4>
-                    <p>Equipe que atua 24 horas no resgate de animais em situação de risco, abandono ou maus-tratos.
-                        Oferecemos atendimento veterinário de emergência e tratamento completo.</p>
+          <div class="projeto-conteudo">
+            <h4>Sobre o Projeto</h4>
+            <p>
+              Equipe que atua 24 horas no resgate de animais em situação de
+              risco, abandono ou maus-tratos. Oferecemos atendimento veterinário
+              de emergência e tratamento completo.
+            </p>
 
-                    <h4>Objetivos</h4>
-                    <ul>
-                        <li>Resgatar animais em risco imediato</li>
-                        <li>Prestar primeiros socorros emergenciais</li>
-                        <li>Reduzir tempo de resposta</li>
-                    </ul>
+            <h4>Objetivos</h4>
+            <ul>
+              <li>Resgatar animais em risco imediato</li>
+              <li>Prestar primeiros socorros emergenciais</li>
+              <li>Reduzir tempo de resposta</li>
+            </ul>
 
-                    <h4>Como Funciona</h4>
-                    <p>Recebemos denúncias via telefone ou redes sociais, avaliamos a urgência, mobilizamos a
-                        equipe, fazemos o resgate seguro e levamos o animal para atendimento veterinário.</p>
+            <h4>Como Funciona</h4>
+            <p>
+              Recebemos denúncias via telefone ou redes sociais, avaliamos a
+              urgência, mobilizamos a equipe, fazemos o resgate seguro e levamos
+              o animal para atendimento veterinário.
+            </p>
 
-                    <h4>📊 Resultados</h4>
-                    <div class="resultados">
-                        <div class="resultado-item">
-                            <span class="numero">450+</span>
-                            <span class="label">Animais Resgatados</span>
-                        </div>
-                        <div class="resultado-item">
-                            <span class="numero">92%</span>
-                            <span class="label">Taxa de Recuperação</span>
-                        </div>
-                        <div class="resultado-item">
-                            <span class="numero">2h</span>
-                            <span class="label">Tempo Médio</span>
-                        </div>
-                    </div>
+            <h4>📊 Resultados</h4>
+            <div class="resultados">
+              <div class="resultado-item">
+                <span class="numero">450+</span>
+                <span class="label">Animais Resgatados</span>
+              </div>
+              <div class="resultado-item">
+                <span class="numero">92%</span>
+                <span class="label">Taxa de Recuperação</span>
+              </div>
+              <div class="resultado-item">
+                <span class="numero">2h</span>
+                <span class="label">Tempo Médio</span>
+              </div>
+            </div>
 
-                    <p class="contato-projeto">📞 <strong>Emergência:</strong> (77) 99999-0001</p>
-                </div>
-            </article>
+            <p class="contato-projeto">
+              📞 <strong>Emergência:</strong> (77) 99999-0001
+            </p>
+          </div>
+        </article>
 
-            <!-- Projeto 2 -->
-            <article class="projeto">
-                <div class="projeto-topo">
-                    <span class="badge-status ativo">Em Andamento</span>
-                    <h3>🏠 Adote um Amigo</h3>
-                </div>
+        <!-- Projeto 2 -->
+        <article class="projeto">
+          <div class="projeto-topo">
+            <span class="badge-status ativo">Em Andamento</span>
+            <h3>🏠 Adote um Amigo</h3>
+          </div>
 
-                <div class="projeto-info">
-                    <div class="info-grid">
-                        <p><strong>📅 Início:</strong> Janeiro/2020</p>
-                        <p><strong>📍 Local:</strong> Sede e eventos</p>
-                        <p><strong>👥 Responsável:</strong> Beatriz Rocha</p>
-                        <p><strong>💰 Investimento:</strong> R$ 45.000/ano</p>
-                    </div>
-                </div>
+          <div class="projeto-info">
+            <div class="info-grid">
+              <p><strong>📅 Início:</strong> Janeiro/2020</p>
+              <p><strong>📍 Local:</strong> Sede e eventos</p>
+              <p><strong>👥 Responsável:</strong> Beatriz Rocha</p>
+              <p><strong>💰 Investimento:</strong> R$ 45.000/ano</p>
+            </div>
+          </div>
 
-                <div class="projeto-conteudo">
-                    <h4>Sobre o Projeto</h4>
-                    <p>Programa de adoção responsável que conecta animais resgatados a famílias amorosas. Realizamos
-                        entrevistas, visitas domiciliares e acompanhamento pós-adoção.</p>
+          <div class="projeto-conteudo">
+            <h4>Sobre o Projeto</h4>
+            <p>
+              Programa de adoção responsável que conecta animais resgatados a
+              famílias amorosas. Realizamos entrevistas, visitas domiciliares e
+              acompanhamento pós-adoção.
+            </p>
 
-                    <h4>Objetivos</h4>
-                    <ul>
-                        <li>Encontrar lares permanentes para os animais</li>
-                        <li>Garantir adoções responsáveis</li>
-                        <li>Educar sobre posse responsável</li>
-                    </ul>
+            <h4>Objetivos</h4>
+            <ul>
+              <li>Encontrar lares permanentes para os animais</li>
+              <li>Garantir adoções responsáveis</li>
+              <li>Educar sobre posse responsável</li>
+            </ul>
 
-                    <h4>Como Funciona</h4>
-                    <p>Cadastro → Entrevista → Visita domiciliar → Apresentação dos animais → Período de adaptação →
-                        Adoção formalizada → Acompanhamento.</p>
+            <h4>Como Funciona</h4>
+            <p>
+              Cadastro → Entrevista → Visita domiciliar → Apresentação dos
+              animais → Período de adaptação → Adoção formalizada →
+              Acompanhamento.
+            </p>
 
-                    <h4>📊 Resultados</h4>
-                    <div class="resultados">
-                        <div class="resultado-item">
-                            <span class="numero">320</span>
-                            <span class="label">Adoções</span>
-                        </div>
-                        <div class="resultado-item">
-                            <span class="numero">98%</span>
-                            <span class="label">Taxa de Sucesso</span>
-                        </div>
-                        <div class="resultado-item">
-                            <span class="numero">24</span>
-                            <span class="label">Feiras</span>
-                        </div>
-                    </div>
+            <h4>📊 Resultados</h4>
+            <div class="resultados">
+              <div class="resultado-item">
+                <span class="numero">320</span>
+                <span class="label">Adoções</span>
+              </div>
+              <div class="resultado-item">
+                <span class="numero">98%</span>
+                <span class="label">Taxa de Sucesso</span>
+              </div>
+              <div class="resultado-item">
+                <span class="numero">24</span>
+                <span class="label">Feiras</span>
+              </div>
+            </div>
 
-                    <p class="contato-projeto">📧 <strong>Quero Adotar:</strong> adocao@wildhearts.org.br</p>
-                </div>
-            </article>
+            <p class="contato-projeto">
+              📧 <strong>Quero Adotar:</strong> adocao@wildhearts.org.br
+            </p>
+          </div>
+        </article>
 
-            <!-- Projeto 3 -->
-            <article class="projeto">
-                <div class="projeto-topo">
-                    <span class="badge-status ativo">Em Andamento</span>
-                    <h3>⚕️ Castração Solidária</h3>
-                </div>
+        <!-- Projeto 3 -->
+        <article class="projeto">
+          <div class="projeto-topo">
+            <span class="badge-status ativo">Em Andamento</span>
+            <h3>⚕️ Castração Solidária</h3>
+          </div>
 
-                <div class="projeto-info">
-                    <div class="info-grid">
-                        <p><strong>📅 Início:</strong> Junho/2022</p>
-                        <p><strong>📍 Local:</strong> Clínicas parceiras</p>
-                        <p><strong>👥 Responsável:</strong> Dra. Juliana Fernandes</p>
-                        <p><strong>💰 Investimento:</strong> R$ 65.000/ano</p>
-                    </div>
-                </div>
+          <div class="projeto-info">
+            <div class="info-grid">
+              <p><strong>📅 Início:</strong> Junho/2022</p>
+              <p><strong>📍 Local:</strong> Clínicas parceiras</p>
+              <p><strong>👥 Responsável:</strong> Dra. Juliana Fernandes</p>
+              <p><strong>💰 Investimento:</strong> R$ 65.000/ano</p>
+            </div>
+          </div>
 
-                <div class="projeto-conteudo">
-                    <h4>Sobre o Projeto</h4>
-                    <p>Programa de castração gratuita ou a preço acessível para famílias de baixa renda. Controla a
-                        população de animais de rua e previne o abandono.</p>
+          <div class="projeto-conteudo">
+            <h4>Sobre o Projeto</h4>
+            <p>
+              Programa de castração gratuita ou a preço acessível para famílias
+              de baixa renda. Controla a população de animais de rua e previne o
+              abandono.
+            </p>
 
-                    <h4>Objetivos</h4>
-                    <ul>
-                        <li>Controlar população de animais abandonados</li>
-                        <li>Prevenir doenças e problemas de saúde</li>
-                        <li>Tornar castração acessível para todos</li>
-                    </ul>
+            <h4>Objetivos</h4>
+            <ul>
+              <li>Controlar população de animais abandonados</li>
+              <li>Prevenir doenças e problemas de saúde</li>
+              <li>Tornar castração acessível para todos</li>
+            </ul>
 
-                    <h4>Como Funciona</h4>
-                    <p>Inscrição → Análise socioeconômica → Agendamento → Cirurgia → Acompanhamento pós-operatório →
-                        Orientações.</p>
+            <h4>Como Funciona</h4>
+            <p>
+              Inscrição → Análise socioeconômica → Agendamento → Cirurgia →
+              Acompanhamento pós-operatório → Orientações.
+            </p>
 
-                    <h4>📊 Resultados</h4>
-                    <div class="resultados">
-                        <div class="resultado-item">
-                            <span class="numero">280</span>
-                            <span class="label">Castrações</span>
-                        </div>
-                        <div class="resultado-item">
-                            <span class="numero">100%</span>
-                            <span class="label">Sem Complicações</span>
-                        </div>
-                        <div class="resultado-item">
-                            <span class="numero">12</span>
-                            <span class="label">Mutirões</span>
-                        </div>
-                    </div>
-                    <p class="contato-projeto">📧 <strong>Agendar:</strong> castracao@wildhearts.org.br</p>
-                </div>
-            </article>
-        </div>
+            <h4>📊 Resultados</h4>
+            <div class="resultados">
+              <div class="resultado-item">
+                <span class="numero">280</span>
+                <span class="label">Castrações</span>
+              </div>
+              <div class="resultado-item">
+                <span class="numero">100%</span>
+                <span class="label">Sem Complicações</span>
+              </div>
+              <div class="resultado-item">
+                <span class="numero">12</span>
+                <span class="label">Mutirões</span>
+              </div>
+            </div>
+            <p class="contato-projeto">
+              📧 <strong>Agendar:</strong> castracao@wildhearts.org.br
+            </p>
+          </div>
+        </article>
+      </div>
     </section>
 
     <section id="galeria" class="project-galeria">
-        <div class="subsecao">
-            <h2>📸 Galeria</h2>
-            <p class="intro-galeria">Momentos especiais dos nossos resgates e adoções.</p>
+      <div class="subsecao">
+        <h2>📸 Galeria</h2>
+        <p class="intro-galeria">
+          Momentos especiais dos nossos resgates e adoções.
+        </p>
 
-            <!-- Grid da Galeria -->
-            <div class="galeria-grid">
-
-                <!-- Foto 1 -->
-                <div class="galeria-item">
-                    <div class="galeria-thumb">
-                        <img src="foto-resgate-1.jpg" alt="Resgate de cachorro">
-                        <div class="galeria-overlay">
-                            <p>Resgate na Zona Sul</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Vídeo 1 -->
-                <div class="galeria-item">
-                    <div class="galeria-thumb video">
-                        <img src="thumb-video-1.jpg" alt="Vídeo de resgate">
-                        <span class="play-icon">▶️</span>
-                        <div class="galeria-overlay">
-                            <p>Operação Resgate</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Foto 2 -->
-                <div class="galeria-item">
-                    <div class="galeria-thumb">
-                        <img src="foto-cuidado-1.jpg" alt="Cuidados veterinários">
-                        <div class="galeria-overlay">
-                            <p>Atendimento Veterinário</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Foto 3 -->
-                <div class="galeria-item">
-                    <div class="galeria-thumb">
-                        <img src="foto-adocao-1.jpg" alt="Família adotando">
-                        <div class="galeria-overlay">
-                            <p>Nova Família Feliz</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Vídeo 2 -->
-                <div class="galeria-item">
-                    <div class="galeria-thumb video">
-                        <img src="thumb-video-2.jpg" alt="Vídeo de adoção">
-                        <span class="play-icon">▶️</span>
-                        <div class="galeria-overlay">
-                            <p>Momento da Adoção</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Foto 4 -->
-                <div class="galeria-item">
-                    <div class="galeria-thumb">
-                        <img src="foto-evento-1.jpg" alt="Feira de adoção">
-                        <div class="galeria-overlay">
-                            <p>Feira de Adoção</p>
-                        </div>
-                    </div>
-                </div>
-
+        <!-- Grid da Galeria -->
+        <div class="galeria-grid">
+          <!-- Foto 1 -->
+          <div class="galeria-item">
+            <div class="galeria-thumb">
+              <img
+                src="img/resgatando cachorro.jpg"
+                alt="Resgate de cachorro"
+                loading="lazy"
+              />
+              <div class="galeria-overlay">
+                <p>Resgate na Zona Sul</p>
+              </div>
             </div>
+          </div>
+
+          <!-- Vídeo 1 -->
+          <div class="galeria-item">
+            <div class="galeria-thumb video">
+              <iframe
+                src="https://www.youtube.com/embed/CGY5iYKpy24"
+                frameborder="0"
+                alt="Video de resgate"
+                loading="lazy"
+              ></iframe>
+              <div class="galeria-overlay">
+                <p>Operação Resgate</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Foto 2 -->
+          <div class="galeria-item">
+            <div class="galeria-thumb">
+              <img
+                src="img/cuidados veterinarios.jpg"
+                alt="Cuidados veterinários"
+                loading="lazy"
+              />
+              <div class="galeria-overlay">
+                <p>Atendimento Veterinário</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Foto 3 -->
+          <div class="galeria-item">
+            <div class="galeria-thumb">
+              <img
+                src="img/familia adotando.jpg"
+                alt="Família adotando"
+                loading="lazy"
+              />
+              <div class="galeria-overlay">
+                <p>Nova Família Feliz</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Foto 4 -->
+          <div class="galeria-item">
+            <div class="galeria-thumb">
+              <img
+                src="img/feira de adocao.jpg"
+                alt="Feira de adoção"
+                loading="lazy"
+              />
+              <div class="galeria-overlay">
+                <p>Feira de Adoção</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="indicadores" class="project-indicadores">
-        <div class="subsecao">
-            <h2>📊 Indicadores de Impacto</h2>
-            <p class="intro-indicadores">Nossos resultados em números.</p>
+      <div class="subsecao">
+        <h2>📊 Indicadores de Impacto</h2>
+        <p class="intro-indicadores">Nossos resultados em números.</p>
 
-            <!-- Indicadores Principais -->
-            <div class="indicadores-grid">
+        <!-- Indicadores Principais -->
+        <div class="indicadores-grid">
+          <div class="indicador-card">
+            <span class="indicador-numero">770+</span>
+            <span class="indicador-label">Animais Salvos</span>
+            <span class="indicador-periodo">Total desde 2020</span>
+          </div>
 
-                <div class="indicador-card">
-                    <span class="indicador-numero">770+</span>
-                    <span class="indicador-label">Animais Salvos</span>
-                    <span class="indicador-periodo">Total desde 2020</span>
-                </div>
+          <div class="indicador-card">
+            <span class="indicador-numero">320</span>
+            <span class="indicador-label">Adoções Realizadas</span>
+            <span class="indicador-periodo">Total desde 2020</span>
+          </div>
 
-                <div class="indicador-card">
-                    <span class="indicador-numero">320</span>
-                    <span class="indicador-label">Adoções Realizadas</span>
-                    <span class="indicador-periodo">Total desde 2020</span>
-                </div>
+          <div class="indicador-card">
+            <span class="indicador-numero">98%</span>
+            <span class="indicador-label">Taxa de Sucesso</span>
+            <span class="indicador-periodo">Adoções bem-sucedidas</span>
+          </div>
 
-                <div class="indicador-card">
-                    <span class="indicador-numero">98%</span>
-                    <span class="indicador-label">Taxa de Sucesso</span>
-                    <span class="indicador-periodo">Adoções bem-sucedidas</span>
-                </div>
+          <div class="indicador-card">
+            <span class="indicador-numero">85</span>
+            <span class="indicador-label">Voluntários Ativos</span>
+            <span class="indicador-periodo">Em 2025</span>
+          </div>
 
-                <div class="indicador-card">
-                    <span class="indicador-numero">85</span>
-                    <span class="indicador-label">Voluntários Ativos</span>
-                    <span class="indicador-periodo">Em 2025</span>
-                </div>
+          <div class="indicador-card">
+            <span class="indicador-numero">24/7</span>
+            <span class="indicador-label">Atendimento</span>
+            <span class="indicador-periodo">Resgate emergencial</span>
+          </div>
 
-                <div class="indicador-card">
-                    <span class="indicador-numero">24/7</span>
-                    <span class="indicador-label">Atendimento</span>
-                    <span class="indicador-periodo">Resgate emergencial</span>
-                </div>
-
-                <div class="indicador-card">
-                    <span class="indicador-numero">5 anos</span>
-                    <span class="indicador-label">De História</span>
-                    <span class="indicador-periodo">Desde 2020</span>
-                </div>
-
-            </div>
-
-            <!-- Evolução Rápida -->
-            <div class="evolucao-resumo">
-                <h4>📈 Nossa Evolução</h4>
-                <div class="anos-comparacao">
-                    <div class="ano-item">
-                        <strong>2020</strong>
-                        <span>15 resgates</span>
-                    </div>
-                    <div class="seta">→</div>
-                    <div class="ano-item">
-                        <strong>2022</strong>
-                        <span>150 resgates</span>
-                    </div>
-                    <div class="seta">→</div>
-                    <div class="ano-item destaque">
-                        <strong>2024</strong>
-                        <span>270 resgates</span>
-                    </div>
-                </div>
-            </div>
-
+          <div class="indicador-card">
+            <span class="indicador-numero">5 anos</span>
+            <span class="indicador-label">De História</span>
+            <span class="indicador-periodo">Desde 2020</span>
+          </div>
         </div>
+
+        <!-- Evolução Rápida -->
+        <div class="evolucao-resumo">
+          <h4>📈 Nossa Evolução</h4>
+          <div class="anos-comparacao">
+            <div class="ano-item">
+              <strong>2020</strong>
+              <span>15 resgates</span>
+            </div>
+            <div class="seta">→</div>
+            <div class="ano-item">
+              <strong>2022</strong>
+              <span>150 resgates</span>
+            </div>
+            <div class="seta">→</div>
+            <div class="ano-item destaque">
+              <strong>2024</strong>
+              <span>270 resgates</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="categoria" class="project=categorias">
-        <div class="subsecao">
-            <h3>🏷️ Categorias de Projetos</h3>
-            <p class="intro-categorias">Nossos projetos organizados por área de atuação.</p>
+      <div class="subsecao">
+        <h3>🏷️ Categorias de Projetos</h3>
+        <p class="intro-categorias">
+          Nossos projetos organizados por área de atuação.
+        </p>
 
-            <!-- Grid de Categorias -->
-            <div class="categorias-grid">
+        <!-- Grid de Categorias -->
+        <div class="categorias-grid">
+          <!-- Categoria 1 -->
+          <div class="categoria-card">
+            <span class="cat-icone">🚨</span>
+            <h4>Resgate e Emergência</h4>
+            <p>Atendimento 24h para animais em risco</p>
+            <span class="cat-projetos">1 projeto ativo</span>
+          </div>
 
-                <!-- Categoria 1 -->
-                <div class="categoria-card">
-                    <span class="cat-icone">🚨</span>
-                    <h4>Resgate e Emergência</h4>
-                    <p>Atendimento 24h para animais em risco</p>
-                    <span class="cat-projetos">1 projeto ativo</span>
-                </div>
+          <!-- Categoria 2 -->
+          <div class="categoria-card">
+            <span class="cat-icone">🏠</span>
+            <h4>Adoção Responsável</h4>
+            <p>Conectando animais a lares amorosos</p>
+            <span class="cat-projetos">1 projeto ativo</span>
+          </div>
 
-                <!-- Categoria 2 -->
-                <div class="categoria-card">
-                    <span class="cat-icone">🏠</span>
-                    <h4>Adoção Responsável</h4>
-                    <p>Conectando animais a lares amorosos</p>
-                    <span class="cat-projetos">1 projeto ativo</span>
-                </div>
+          <!-- Categoria 3 -->
+          <div class="categoria-card">
+            <span class="cat-icone">⚕️</span>
+            <h4>Saúde Animal</h4>
+            <p>Cuidados veterinários e prevenção</p>
+            <span class="cat-projetos">1 projeto ativo</span>
+          </div>
 
-                <!-- Categoria 3 -->
-                <div class="categoria-card">
-                    <span class="cat-icone">⚕️</span>
-                    <h4>Saúde Animal</h4>
-                    <p>Cuidados veterinários e prevenção</p>
-                    <span class="cat-projetos">1 projeto ativo</span>
-                </div>
-
-                <!-- Categoria 4 -->
-                <div class="categoria-card">
-                    <span class="cat-icone">📚</span>
-                    <h4>Educação</h4>
-                    <p>Conscientização sobre guarda responsável</p>
-                    <span class="cat-projetos">Em planejamento</span>
-                </div>
-
-            </div>
-
+          <!-- Categoria 4 -->
+          <div class="categoria-card">
+            <span class="cat-icone">📚</span>
+            <h4>Educação</h4>
+            <p>Conscientização sobre guarda responsável</p>
+            <span class="cat-projetos">Em planejamento</span>
+          </div>
         </div>
+      </div>
     </section>
 
-    <footer class="rodape">
-        <div class="container">
-            <p>&copy; 2020 - ONG Wild Hearts</p>
-            <p class="disclaimer">
-                <strong>Aviso:</strong> Este é um site fictício criado para fins educacionais.
-                Nenhuma das informações, projetos ou dados apresentados são reais.
-            </p>
-        </div>
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2020 - ONG Wild Hearts</p>
+        <p class="disclaimer">
+          <strong>Aviso:</strong> Este é um site fictício criado para fins
+          educacionais. Nenhuma das informações, projetos ou dados apresentados
+          são reais.
+        </p>
+      </div>
     </footer>
 
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>

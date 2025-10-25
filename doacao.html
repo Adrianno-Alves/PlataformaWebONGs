@@ -6,48 +6,365 @@
 
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Adrianno Pereira Alves">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Adrianno Pereira Alves" />
     <title>Doe Aqui</title>
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
-    <header class="header">
+  <body>
+    <header>
+      <div class="aviso-ficticio">
+        ⚠️ Este site é fictício e foi criado apenas para fins
+        educacionais/demonstrativos. As informações aqui contidas não são reais.
+      </div>
 
-        <div class="aviso-ficticio">
-            ⚠️ Este site é fictício e foi criado apenas para fins educacionais/demonstrativos. As informações aqui
-            contidas não são reais.
+      <nav class="nav-bar">
+        <a href="index.html" class="logo">🐾</a>
+
+        <div class="nav-list">
+          <ul>
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Institucional</a>
+            </li>
+            <li class="nav-item">
+              <a href="doacao.html" class="nav-link" class="active">Doações</a>
+            </li>
+            <li class="nav-item">
+              <a href="projeto.html" class="nav-link">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a href="ajuda.html" class="nav-link">Como Ajudar</a>
+            </li>
+            <li class="nav-item">
+              <a href="login.html" class="nav-link">Entrar</a>
+            </li>
+          </ul>
         </div>
 
-        <nav class="nav-bar">
-            <a href="index.html" class="logo">🐾ONG Wild Hearts</a>
+        <div class="mobile-menu-icon">
+          <button onclick="menuShow()">
+            <img
+              class="icon"
+              src="img/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+            />
+          </button>
+        </div>
 
-            <div class="nav-list">
-                <ul>
-                    <li class="nav-item"><a href="index.html" class="nav-link" class="active">Institucional</a></li>
-                    <li class="nav-item"><a href="doacao.html" class="nav-link">Doações</a></li>
-                    <li class="nav-item"><a href="projeto.html" class="nav-link">Projetos</a></li>
-                    <li class="nav-item"><a href="ajuda.html" class="nav-link">Como Ajudar</a></li>
-                    <li class="nav-item"><a href="login.html" class="nav-link">Entrar</a></li>
-                </ul>
-            </div>
-
-        </nav>
+        <div class="mobile-menu">
+          <ul>
+            <li class="nav-item">
+              <a href="index.html" class="nav-link" class="active"
+                >Institucional</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="doacao.html" class="nav-link">Doações</a>
+            </li>
+            <li class="nav-item">
+              <a href="projeto.html" class="nav-link">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a href="ajuda.html" class="nav-link">Como Ajudar</a>
+            </li>
+            <li class="nav-item">
+              <a href="login.html" class="nav-link">Entrar</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2020 - ONG Wild Hearts</p>
-            <p class="disclaimer">
-                <strong>Aviso:</strong> Este é um site fictício criado para fins educacionais.
-                Nenhuma das informações, projetos ou dados apresentados são reais.
-            </p>
+    <section class="doar-banner">
+      <div class="banner-conteudo">
+        <h1>Doe e Faça a Diferença!</h1>
+        <p>
+          Sua contribuição ajuda a salvar vidas e proporcionar um futuro melhor
+          para os animais resgatados.
+        </p>
+      </div>
+    </section>
+
+    <section class="doar-section">
+      <div class="container">
+        <a href="#campanhas" class="doar-link">Nossas Campanhas</a>
+        <a href="#online" class="doar-link">Doe Online</a>
+        <a href="#metas" class="doar-link">Nossas Metas</a>
+        <a href="#prestacao" class="doar-link">Prestação de Contas</a>
+      </div>
+    </section>
+
+    <section id="campanhas" class="doar-campanha">
+      <div class="subsecao">
+        <h2>📢 Campanhas de Arrecadação</h2>
+        <p>Participe das nossas campanhas e ajude a alcançar nossas metas!</p>
+
+        <!-- Campanha Ativa Principal -->
+        <div class="campanha-destaque">
+          <div class="campanha-header">
+            <span class="campanha-badge ativa">🔥 Campanha Ativa</span>
+            <h3>🍖 Campanha de Ração - Inverno 2025</h3>
+          </div>
+
+          <div class="campanha-conteudo">
+            <div class="campanha-info">
+              <p class="campanha-descricao">
+                Precisamos arrecadar <strong>R$ 15.000</strong> para comprar
+                ração para os próximos 3 meses. Com o inverno chegando, o
+                consumo de ração aumenta e precisamos garantir que nenhum animal
+                fique sem alimentação.
+              </p>
+
+              <div class="campanha-detalhes">
+                <div class="detalhe-item">
+                  <span class="detalhe-icone">📅</span>
+                  <div>
+                    <strong>Período</strong>
+                    <p>01/Out a 30/Nov/2025</p>
+                  </div>
+                </div>
+                <div class="detalhe-item">
+                  <span class="detalhe-icone">🎯</span>
+                  <div>
+                    <strong>Meta</strong>
+                    <p>R$ 15.000,00</p>
+                  </div>
+                </div>
+                <div class="detalhe-item">
+                  <span class="detalhe-icone">💰</span>
+                  <div>
+                    <strong>Arrecadado</strong>
+                    <p>R$ 8.750,00</p>
+                  </div>
+                </div>
+                <div class="detalhe-item">
+                  <span class="detalhe-icone">📊</span>
+                  <div>
+                    <strong>Progresso</strong>
+                    <p>58% da meta</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="progresso-campanha">
+                <div class="progresso-barra">
+                  <div class="progresso-preenchido" style="width: 58%">
+                    <span>58%</span>
+                  </div>
+                </div>
+                <div class="progresso-info">
+                  <span class="arrecadado">R$ 8.750 arrecadados</span>
+                  <span class="faltam">Faltam R$ 6.250</span>
+                </div>
+              </div>
+
+              <div class="campanha-impacto">
+                <h5>🐾 Impacto da sua doação:</h5>
+                <div class="impacto-grid">
+                  <div class="impacto-item">
+                    <strong>R$ 50</strong>
+                    <p>15kg de ração<br />(alimenta 3 animais por 1 semana)</p>
+                  </div>
+                  <div class="impacto-item">
+                    <strong>R$ 100</strong>
+                    <p>30kg de ração<br />(alimenta 6 animais por 1 semana)</p>
+                  </div>
+                  <div class="impacto-item">
+                    <strong>R$ 250</strong>
+                    <p>75kg de ração<br />(alimenta 15 animais por 1 semana)</p>
+                  </div>
+                  <div class="impacto-item">
+                    <strong>R$ 500</strong>
+                    <p>
+                      150kg de ração<br />(alimenta 30 animais por 1 semana)
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn-doar-campanha">
+                💝 Doar para esta Campanha
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <!-- Outras Campanhas -->
+      <div class="outras-campanhas">
+        <h4>📋 Outras Campanhas</h4>
+
+        <div class="campanhas-grid">
+          <!-- Campanha 2 -->
+          <div class="campanha-card">
+            <span class="campanha-badge planejada">📅 Próxima</span>
+            <h5>🎄 Campanha de Natal</h5>
+            <p>Arrecadação de brinquedos e petiscos para os animais.</p>
+            <div class="campanha-meta-mini">
+              <span>Meta: R$ 5.000</span>
+              <span>Início: Dezembro/2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="online" class="doar-online">
+      <div class="subsecao">
+        <h2>💳 Doar Online</h2>
+        <p class="intro-doar">
+          Escolha o valor e a forma de pagamento. Rápido, fácil e seguro!
+        </p>
+
+        <!-- Valores Sugeridos -->
+        <div class="valores-sugeridos">
+          <h3>💰 Escolha o Valor</h3>
+          <div class="valores-grid">
+            <button class="valor-btn">R$ 30</button>
+            <button class="valor-btn">R$ 50</button>
+            <button class="valor-btn popular">R$ 100</button>
+            <button class="valor-btn">R$ 250</button>
+            <button class="valor-btn">R$ 500</button>
+            <button class="valor-btn outro">Outro valor</button>
+          </div>
+        </div>
+
+        <!-- Formas de Pagamento -->
+        <div class="formas-pagamento">
+          <h4>📲 Como você quer doar?</h4>
+
+          <div class="pagamentos-grid">
+            <!-- PIX -->
+            <div class="pagamento-card">
+              <span class="pag-icone">📱</span>
+              <h5>PIX</h5>
+              <p>Transferência instantânea</p>
+              <div class="pix-info">
+                <strong>Chave PIX (CNPJ):</strong>
+                <code>99.999.999/0001-01</code>
+                <button class="btn-copiar">Copiar Chave</button>
+              </div>
+            </div>
+
+            <!-- Cartão -->
+            <div class="pagamento-card">
+              <span class="pag-icone">💳</span>
+              <h5>Cartão de Crédito</h5>
+              <p>Parcelamento disponível</p>
+              <button class="btn-pagar">Pagar com Cartão</button>
+            </div>
+
+            <!-- Transferência -->
+            <div class="pagamento-card">
+              <span class="pag-icone">🏦</span>
+              <h5>Transferência Bancária</h5>
+              <p>TED ou DOC</p>
+              <div class="dados-bancarios">
+                <p><strong>Banco:</strong> Banco do Brasil</p>
+                <p><strong>Agência:</strong> 1234-5</p>
+                <p><strong>Conta:</strong> 67890-1</p>
+                <p><strong>CNPJ:</strong> 99.999.999/0001-01</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Segurança -->
+        <div class="info-seguranca">
+          <p>
+            🔒 <strong>Doação 100% segura.</strong> Seus dados estão protegidos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="metas" class="doar-metas">
+      <div class="meta-container">
+        <h2>Campanha: Ração de Inverno</h2>
+        <p>
+          Ajude-nos a alcançar nossa meta para alimentar os animais resgatados.
+        </p>
+
+        <p><strong>Meta:</strong> R$ 15.000</p>
+        <p><strong>Arrecadado:</strong> <span id="valorAtual">0</span></p>
+
+        <div class="progresso">
+          <div class="barra" id="barraProgresso">0%</div>
+        </div>
+
+        <button onclick="doar(200)">Doar R$200</button>
+        <button onclick="doar(500)">Doar R$500</button>
+        <button onclick="doar(1000)">Doar R$1000</button>
+      </div>
+    </section>
+
+    <section id="prestacao" class="doar-prestacao">
+      <h2>Prestação de contas</h2>
+
+      <p>Transparência das doações: como aplicamos os recursos arrecadados.</p>
+
+      <h3>Distribuição dos recursos</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Categoria</th>
+            <th>Percentual</th>
+            <th>Descrição</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tratamentos veterinários</td>
+            <td>60%</td>
+            <td>Consultas, cirurgias, exames e medicamentos.</td>
+          </tr>
+          <tr>
+            <td>Alimentação</td>
+            <td>25%</td>
+            <td>Ração, suplementos e água potável.</td>
+          </tr>
+          <tr>
+            <td>Manutenção do abrigo</td>
+            <td>10%</td>
+            <td>Limpeza, reparos, energia e aluguel.</td>
+          </tr>
+          <tr>
+            <td>Campanhas de adoção</td>
+            <td>5%</td>
+            <td>Divulgação, materiais e eventos.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Relatórios</h3>
+      <ul>
+        <li><a href="#" download>Relatório mensal - Janeiro</a></li>
+        <li><a href="#" download>Relatório mensal - Fevereiro</a></li>
+        <li><a href="#" download>Relatório mensal - Março</a></li>
+        <li><a href="#" download>Relatório anual - 2025</a></li>
+      </ul>
+
+      <h3>Resumo rápido</h3>
+      <p>
+        <strong>Total arrecadado:</strong> R$ 5.000 |
+        <strong>Total investido:</strong> R$ 4.850 | <strong>Saldo:</strong> R$
+        150
+      </p>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2020 - ONG Wild Hearts</p>
+        <p class="disclaimer">
+          <strong>Aviso:</strong> Este é um site fictício criado para fins
+          educacionais. Nenhuma das informações, projetos ou dados apresentados
+          são reais.
+        </p>
+      </div>
     </footer>
 
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
